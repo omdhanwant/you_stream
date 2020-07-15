@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">You Stream</string>
+    <string name="logo">LOGO</string>
+    <string name="empty_record_label">No Data Available</string>
+    <string name="label_popularity">Popularity</string>
+    <string name="label_release_date">Release Date</string>
+    <string name="search_label">Search for Movies or TV shows</string>
 </resources>

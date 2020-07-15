@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:text="@string/app_name"
+                android:id="@+id/home_title_view"
+                android:textSize="26sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.omdhanwant.youstream.utils.CustomTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@android:color/black"
+            style="@style/AppTabLayout"
+            app:tabTextAppearance="@style/AppTextAppearance"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appbar"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:contentScrim="?attr/colorPrimary"-->
+<!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+<!--            app:toolbarId="@+id/toolbar">-->
+
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#F8504E53"-->
+<!--                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--                app:layout_scrollFlags="scroll|enterAlways">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/home_title_view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/app_name"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="26sp" />-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+
+<!--        <com.omdhanwant.youstream.utils.CustomTabLayout-->
+<!--            android:id="@+id/tabLayout"-->
+<!--            style="@style/AppTabLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:tabGravity="fill"-->
+<!--            app:tabMode="fixed"-->
+<!--            app:tabTextAppearance="@style/AppTextAppearance"-->
+<!--            app:tabTextColor="@android:color/black" />-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
